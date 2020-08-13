@@ -12,7 +12,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.anime{
+  padding-left: 56rem;
+  padding-top: 2rem;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +31,87 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+#pencil{
+  animation: pencil 8s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#ticket{
+  animation: ticket 8s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#paper,#calculator,#rock{
+  animation: paper 1s ease-in-out infinite alternate;
+}
+#laptop,#cup{
+  animation: laptop 1s  ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+#leaf{
+  animation: leaf 1s  ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+#man,#commentbox{
+  animation: man 1s ease-in-out infinite alternate;
+}
+@keyframes paper{
+  from{
+      transform: rotateZ(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  to{
+      transform: rotateZ(360deg);
   }
+}
+@keyframes laptop {
+  from{
+      transform: rotateX(0deg);
+  }
+  to{
+      transform: rotateX(17deg);
+  }
+}
+@keyframes leaf {
+  from{
+      transform: rotateX(0deg);
+  }
+  to{
+      transform: rotateX(17deg);
+  }
+}
+@keyframes man {
+  from{
+      transform: translateY(0%);
+  }
+  to{
+      transform: translateY(1%);
+  }
+  
+}
+@keyframes pencil {
+  from{
+      transform: rotateZ(0deg);
+  }
+  to{
+      transform: rotateZ(-360deg);
+  }
+  
+}
+@keyframes ticket {
+  from{
+      transform: rotateZ(0deg);
+  }
+  to{
+      transform: rotateZ(360deg);
+  }
+}
+@keyframes paper {
+  from{
+      transform: translateY(0%);
+  }
+  to{
+      transform: translateY(2%);
+  }
+  
 }
